@@ -7,12 +7,18 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
     <>
       <div className="App">
-        {/* ------ ITERATION 1 ----------- */}
+      {/* ------ ITERATION 1 ----------- */}
       <div>
         <IdCard
           lastName='Doe'
@@ -31,22 +37,22 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
-      {/* ------ ITERATION 2 ----------- */}
+<hr></hr>{/* ------ ITERATION 2 ----------- */}
       <div>
         <Greeting language="fr">François</Greeting>
         <Greeting language="de">Ludwig</Greeting>
       </div>
-      {/* ------ ITERATION 3 ----------- */}
+<hr></hr>{/* ------ ITERATION 3 ----------- */}
       <div>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
       </div>
-      {/* ------ ITERATION 4 ----------- */}
+<hr></hr>{/* ------ ITERATION 4 ----------- */}
       <div>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
-     {/* ------ ITERATION 5 ----------- */}
+<hr></hr>{/* ------ ITERATION 5 ----------- */}
       <div>
         <CreditCard
           type="Visa"
@@ -79,7 +85,7 @@ function App() {
           color="white" 
         />
       </div>
-      {/* ------ ITERATION 6 ----------- */}
+<hr></hr>{/* ------ ITERATION 6 ----------- */}
       <div>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -88,7 +94,7 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
-      {/* ------ ITERATION 7 ----------- */}
+<hr></hr>{/* ------ ITERATION 7 ----------- */}
       <div>
       <DriverCard
         name="Travis Kalanick"
@@ -108,6 +114,40 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      </div>
+<hr></hr>{/* ------ ITERATION 8 ----------- */}
+      <div>
+        <LikeButton/>
+      </div>
+<hr></hr>{/* ------ ITERATION 9 ----------- */}
+      <div>
+        <ClickablePicture
+          img='maxence.png'
+          imgClicked='maxence-glasses.png'
+        />
+      </div>
+<hr></hr>{/* ------ ITERATION 10 ----------- */}
+      <div>
+        <Dice/>
+      </div>
+<hr></hr>{/* ------ ITERATION 11 ----------- */}
+      <div>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+      </div>
+<hr></hr>{/* ------ ITERATION 12 ----------- */}
+      <div>
+        <NumbersTable limit={12} />
+      </div>
+<hr></hr>{/* ------ ITERATION 12 ----------- */}
+      <div>
+        <Facebook />
       </div>
     </div>
     </>
